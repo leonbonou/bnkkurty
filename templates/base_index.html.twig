@@ -4,18 +4,18 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="description" content="Meghna One page parallax responsive HTML Template ">
+        <meta name="description" content="Meghna One page parallax responsive HTML Template ">
 
-	<meta name="author" content="Kurty">
+        <meta name="author" content="Kurty">
 
-	<title>Lorem ipsum dolor sit amet consectetur adipisicing elit!</title>
+        <title>Lorem ipsum dolor sit amet consectetur adipisicing elit!</title>
 
-	<!-- Mobile Specific Meta
-		================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Mobile Specific Meta
+            ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Favicon -->
-	<!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" /> -->
+        <!-- Favicon -->
+        <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" /> -->
 
 	
         {% block stylesheets %}
@@ -39,13 +39,13 @@
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
-
-            
-		<!-- 
-		Essential Scripts
-		=====================================-->
 		
-		<!-- Main jQuery -->
+        {% endblock %}
+    </head>
+    <body  id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
+        {% block body %}{% endblock %}
+
+        <!-- Main jQuery -->
 		<script type="text/javascript" src="{{ asset('assets/plugins/jquery/dist/jquery.min.js') }}"></script>
 		<!-- Bootstrap 3.1 -->
 		<script type="text/javascript" src="{{ asset('assets/plugins/bootstrap/dist/js/bootstrap.min.js') }}"></script>
@@ -67,9 +67,7 @@
 		<script type="text/javascript" src="{{ asset('assets/plugins/wow/dist/wow.min.js') }}"></script>
 		<!-- Custom js -->
 		<script type="text/javascript" src="{{ asset('assets/js/script.js') }}"></script>
-        {% endblock %}
-    </head>
-    <body  id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
-        {% block body %}{% endblock %}
     </body>
+
+
 </html>
